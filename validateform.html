@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validate Form JS</title>
+</head>
+<body>
+	<form name="myForm" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="text" name="name">
+<input type="button" id="btn" value="Submit">
+<div id="msg"></div>
+</form>
+</body>
+<script type="text/javascript">
+	document.getElementById('btn').addEventListener('click', validateForm);
+	function validateForm() {
+    var x = document.forms["myForm"]["fname"]["name"].value;
+    if (x == null || x == "") {
+    document.getElementById("msg").innerHTML = "Os";
+        return false;
+    }
+}
+</script>
+</html>
