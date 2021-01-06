@@ -70,4 +70,8 @@ $r  =  $_SESSION['Username'];
 
 //convert string to int using javascript
 parseInt(sttl);
+
+
+//default time zone
+date_default_timezone_set('Africa/Lagos');
 ?>
