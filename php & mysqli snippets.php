@@ -74,4 +74,8 @@ parseInt(sttl);
 
 //default time zone
 date_default_timezone_set('Africa/Lagos');
+
+
+//get range of values from mysqli database
+SELECT * FROM `student`WHERE mark  BETWEEN 60 and 75;
 ?>
